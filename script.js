@@ -23,7 +23,7 @@ function showTasks() {
 // Сразу вызываем эту функцию, вдруг в памяти уже остались задачи с прошлого раза
 showTasks();
 // Следим, когда пользователь напишет новую задачу в поле ввода и нажмёт Enter
-('#tdlApp input').on('keydown', function (e) {
+$('#tdlApp input').on('keydown', function (e) {
     if (e.keyCode != 13) return;
     var str = e.target.value;
     e.target.value = "";
